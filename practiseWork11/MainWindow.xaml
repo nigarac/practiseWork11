@@ -7,6 +7,27 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBox
+            Margin="32,37,564,348"
+            x:Name="FIO"/>
+        <Button
+            Margin="32,124,564,261"
+            Content="Добавить"
+            Click="addClick"/>
+        <ListBox
+            Margin="32,217,564,30"
+            x:Name="listBox"/>
+        <TextBox
+            Margin="285,37,311,348"
+            x:Name="razdelitel"/>
+        <ComboBox
+            Margin="285,124,311,261"
+            x:Name="comboBox"/>
+        <CheckBox
+            Margin="285,217,311,168"
+            x:Name="sortOnFIO"/>
+        <CheckBox
+            Margin="285,295,311,90"
+            x:Name="reverse"/>
     </Grid>
 </Window>
