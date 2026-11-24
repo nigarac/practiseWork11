@@ -9,7 +9,8 @@
     <Grid>
         <TextBox
             Margin="32,37,564,348"
-            x:Name="FIO"/>
+            x:Name="FIO"
+            Text="Фамилия Имя Отчество"/>
         <Button
             Margin="32,124,564,261"
             Content="Добавить"
@@ -39,6 +40,6 @@
         <Button
             x:Name="clearList"
             Margin="285,344,311,41"
-            Content="Очистить список"/>
+            Content="Очистить список" Click="clearList_Click"/>
     </Grid>
 </Window>
