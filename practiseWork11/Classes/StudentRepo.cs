@@ -43,55 +43,55 @@ namespace practiseWork11.Classes
             string PrintNames = "";
             for (int i = 0; i < _students.Count; i++)
             {
-                PrintNames += $"{(_students[i])} ";
+                PrintNames += $"{(_students[i].Trim())} ";
             }
             return PrintNames;
         }
-        public string PrintNames(string separator)
+        public string PrintNames(string separator = ",")
         {
             string PrintNames = "";
             for (int i = 0; i < _students.Count; i++)
             {
-                PrintNames += $"{(_students[i])}"+separator;
+                PrintNames += $"{(_students[i].Trim())}"+separator;
             }
             return PrintNames;
         }
-        public string PrintNames(char separator)
+        public string PrintNames(char separator = ',')
         {
             string PrintNames = "";
             for (int i = 0; i < _students.Count; i++)
             {
-                PrintNames += $"{(_students[i])}" + separator;
+                PrintNames += $"{(_students[i].Trim())}" + separator;
             }
             return PrintNames;
         }
-        public string PrintNames(string separator,bool sort)
+        public string PrintNames(bool sort,string separator = ",")
         {
             string PrintNames = "";
             _students.Sort();
             for (int i = 0; i < _students.Count; i++)
             {
-                PrintNames += $"{(_students[i])}" + separator;
+                PrintNames += $"{(_students[i].Trim())}" + separator;
             }
             return PrintNames;
         }               
-        public string PrintNames(string separator, bool sort, bool reverse)
+        public string PrintNames(bool sort, bool reverse, string separator = ",")
         {
             string PrintNames = "";
             _students.Sort();
             _students.Reverse();
             for (int i = 0; i < _students.Count; i++)
             {
-                PrintNames += $"{(_students[i])}" + separator;
+                PrintNames += $"{(_students[i].Trim())}" + separator;
             }
             return PrintNames;
         }
-        public string PrintNames(string separator, int MaxCount)
+        public string PrintNames(int MaxCount, string separator = ",")
         {
             string PrintNames = "";
             for (int i = 0; i < MaxCount; i++)
             {
-                PrintNames += $"{(_students[i])}" + separator;
+                PrintNames += $"{(_students[i].Trim())}" + separator;
             }
             return PrintNames;
         }
