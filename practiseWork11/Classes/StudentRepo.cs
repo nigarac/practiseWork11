@@ -63,16 +63,20 @@ namespace practiseWork11.Classes
             {
                 PrintNames += $"{(_students[i].Trim())}" + separator;
             }
+            separator = ',';
             return PrintNames;
         }
         public string PrintNames(bool sort,string separator = ",")
         {
             string PrintNames = "";
+
             _students.Sort();
             for (int i = 0; i < _students.Count; i++)
             {
                 PrintNames += $"{(_students[i].Trim())}" + separator;
             }
+            separator = ",";
+
             return PrintNames;
         }               
         public string PrintNames(bool sort, bool reverse, string separator = ",")
@@ -84,15 +88,19 @@ namespace practiseWork11.Classes
             {
                 PrintNames += $"{(_students[i].Trim())}" + separator;
             }
+            separator = ",";
+
             return PrintNames;
         }
         public string PrintNames(int MaxCount, string separator = ",")
         {
+
             string PrintNames = "";
             for (int i = 0; i < MaxCount; i++)
             {
                 PrintNames += $"{(_students[i].Trim())}" + separator;
             }
+
             return PrintNames;
         }
     }

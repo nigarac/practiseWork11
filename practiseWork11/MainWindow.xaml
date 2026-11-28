@@ -23,23 +23,46 @@
             x:Name="razdelitel"/>
         <ComboBox
             Margin="285,124,311,261"
-            x:Name="comboBox"/>
-        <CheckBox
+            x:Name="comboBox"
+            SelectedIndex="0" 
+            SelectionChanged="comboBox_SelectionChanged">
+            <ComboBoxItem Content="Выберите разделить" />
+            <ComboBoxItem Content=" " />
+            <ComboBoxItem Content=", " />
+            <ComboBoxItem Content="//" />
+        </ComboBox>
+            <CheckBox
             Margin="285,217,311,168"
-            x:Name="sortOnFIO"/>
+            x:Name="sortOnFIO"
+                Content="Сортировка" Checked="sortOnFIO_Checked"/>
         <CheckBox
             Margin="285,295,311,90"
-            x:Name="reverse"/>
+            x:Name="reverse"
+            Content="Перевернутый" Checked="reverse_Checked"/>
         <Button
             x:Name="printList"
             Margin="285,344,311,41"
-            Content="Вывести список"/>
+            Content="Вывести список" Click="printList_Click"/>
         <TextBlock
             Margin="564,37,32,348"
             x:Name="printResult"/>
         <Button
             x:Name="clearList"
-            Margin="285,344,311,41"
-            Content="Очистить список" Click="clearList_Click"/>
+            Margin="541,344,55,41"
+            Content="Очистить список" 
+            Click="clearList_Click"/>
+        <Label
+            Margin="541,192,55,192"
+            x:Name="idStudent"
+            Content="Введите номер ученика"/>
+        <Button
+            x:Name="clearStudent"
+            Margin="541,281,55,104"
+            Content="Очистить выбранного ученика" 
+            Click="clearStudentButton"/>
+        <TextBox
+            Margin="541,124,55,260"
+            x:Name="maxCount"
+            Text="Введите максимальное количество"/>
     </Grid>
 </Window>
